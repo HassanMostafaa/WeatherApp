@@ -1,0 +1,86 @@
+*{
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url("../img/def.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+     background-position: center bottom;
+     color: #f4f4f4;
+     text-shadow: 2px 2px 5px black;
+} 
+#weatherContainer{
+    background-color: rgba(0, 0, 0, 0.39);
+    /*box-shadow:  0 0 15px rgba(0, 0, 0, 0.267);
+    */padding: 50px;
+    position: absolute;
+    top: 0;
+    min-width: 400px;
+    visibility: hidden;
+}
+#weatherContainer h1{
+    margin: 5px;
+    font-size: 40px;
+    
+} 
+.searchContainer{
+    padding: 15px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    width: 100%;
+    background: #1f1f1f60;
+    /* box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.149); */
+}
+.searchContainer input{
+    width: 250px;
+    padding:  8px 15px;
+    background: #f4f4f4bb;
+
+}
+.searchContainer button{
+    background: #f4f4f4bb;
+    padding:  8px 15px;
+    width: 80px;
+    margin-left: -4px;
+}
+.searchContainer button:hover{
+    background: #fdfdfd;
+}
+.searchControl{
+    /* box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.149); */
+    border:none;
+    padding: 5px;
+  
+}
+#weatherMain{
+    display: block;
+    margin-bottom: 20px;
+}
+#weatherMain div{
+    display: inline-block;
+}
+#weatherDisHeader{
+    font-size: 28px;
+    vertical-align: 50%;
+}
+#temp{
+    font-size: 40px;
+    vertical-align: 30%;
+}
+.bottomDetails{
+    display: block;
+    font-size: 24px;
+    text-align: right;
+
+}
+hr{
+    margin-bottom: 20px;
+}
