@@ -14,7 +14,7 @@ function getSearchMethod(searchTerm) {
 
 function searchWeather(searchTerm) {
     getSearchMethod(searchTerm)
-    fetch(`http://api.openweathermap.org/data/2.5/weather?${searchMethod}=${searchTerm}&appid=${appId}&units=${units}`).then(result => {
+    fetch(`https://api.openweathermap.org/data/2.5/weather?${searchMethod}=${searchTerm}&appid=${appId}&units=${units}`).then(result => {
         return result.json();
     }).then(result => {
         init(result);
@@ -23,7 +23,7 @@ function searchWeather(searchTerm) {
 
 function init(resultFromServer) {
     console.log(resultFromServer);
-    console.log('http://openweathermap.org/img/w/' + resultFromServer.weather[0].icon + '.png')
+    console.log('https://openweathermap.org/img/w/' + resultFromServer.weather[0].icon + '.png')
     switch (resultFromServer.weather[0].main) {
         case 'Clear':
             document.body.style.backgroundImage = 'url("img/clear.jpg")'
@@ -60,7 +60,7 @@ function init(resultFromServer) {
     let cityHeader = document.getElementById("cityHeader");
     let weatherIcon = document.getElementById("docIconImg");
 
-    weatherIcon.src = 'http://openweathermap.org/img/w/' + resultFromServer.weather[0].icon + '.png';
+    weatherIcon.src = 'https://openweathermap.org/img/w/' + resultFromServer.weather[0].icon + '.png';
     let resultDescription = resultFromServer.weather[0].description;
     weatherDisHeader.innerText = resultDescription.charAt(0).toUpperCase() + resultDescription.slice(1);
     // .charAt(0).toUpperCase() + resultDescription.slice(5) ----------------------- if u wanna make the first letter capital OVERKILL
