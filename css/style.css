@@ -16,14 +16,14 @@ body{
      text-shadow: 2px 2px 5px black;
 } 
 #weatherContainer{
-    background-color: rgba(0, 0, 0, 0.39);
+    background-color: rgba(0, 0, 0, 0.5);
     box-shadow:  0 0 15px rgba(0, 0, 0, 0.267);
     padding: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 300px;
+    width: 600px;
     visibility: hidden;
 }
 #weatherContainer h1{
@@ -35,7 +35,7 @@ body{
     padding: 15px;
     border: none;   
     text-align: right;
-    background: #1f1f1f60;
+    background: #1f1f1f77;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.149); 
 }
 .alert{
@@ -90,4 +90,17 @@ body{
 }
 hr{
     margin-bottom: 20px;
+}
+@media screen and (max-width : 700px){
+    #weatherContainer{
+        background-color: rgba(0, 0, 0, 0.50);
+        box-shadow:  0 0 15px rgba(0, 0, 0, 0.267);
+        padding: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 300px;
+        visibility: hidden;
+    }
 }
