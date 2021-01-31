@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather Me</title>
-    <link rel="icon" href="img/91986.png">
-
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link rel="icon" href="img/91986.png" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <div class="searchContainer">
-        <input type="text" placeholder="City Name or Zip Code .." id="searchInput" class="searchControl">
-        <button class="searchControl" id="searchBtn">Search</button>
+      <input
+        type="text"
+        placeholder="City Name or Zip Code .."
+        id="searchInput"
+        class="searchControl"
+      />
+      <button class="searchControl" id="searchBtn">Search</button>
+    </div>
+
+    <div class="alert">
+      <h3>
+        Insert City Name or ZIP Code to show the weather conditions
+      </h3>
     </div>
 
     <div id="weatherContainer">
-        <div class="weatherDis">
-            <h1 id="cityHeader"></h1>
-            <div id="weatherMain">
-                <div id="temp"></div>
-                <div id="weatherDisHeader"></div>
-                <div><img id="docIconImg"  alt=""></div>
-              <hr>
-            </div>
-           
-            <div id="windSpeed" class="bottomDetails"></div>
-            <div id="humidity" class="bottomDetails"></div>
+      <div class="weatherDis">
+        <h1 id="cityHeader"></h1>
+        <div id="weatherMain">
+          <div id="temp"></div>
+          <div id="weatherDisHeader"></div>
+          <div><img id="docIconImg" alt="" /></div>
+          <hr />
         </div>
+
+        <div id="windSpeed" class="bottomDetails"></div>
+        <div id="humidity" class="bottomDetails"></div>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

@@ -2,6 +2,7 @@
     outline: none;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
     background: url("../img/def.jpg");
@@ -16,11 +17,13 @@ body{
 } 
 #weatherContainer{
     background-color: rgba(0, 0, 0, 0.39);
-    /*box-shadow:  0 0 15px rgba(0, 0, 0, 0.267);
-    */padding: 50px;
+    box-shadow:  0 0 15px rgba(0, 0, 0, 0.267);
+    padding: 50px;
     position: absolute;
-    top: 0;
-    min-width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 300px;
     visibility: hidden;
 }
 #weatherContainer h1{
@@ -30,17 +33,22 @@ body{
 } 
 .searchContainer{
     padding: 15px;
-    border: none;
-    position: absolute;
-    top: 0;
-    right: 0;
+    border: none;   
     text-align: right;
-    width: 100%;
     background: #1f1f1f60;
-    /* box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.149); */
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.149); 
+}
+.alert{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-weight: 600;
+    color: #f4f4f4;
+    text-shadow: 0 0 15px black;
+    transform: translate(-50%,-50%);
 }
 .searchContainer input{
-    width: 250px;
+    width: 200px;
     padding:  8px 15px;
     background: #f4f4f4bb;
 
@@ -49,7 +57,6 @@ body{
     background: #f4f4f4bb;
     padding:  8px 15px;
     width: 80px;
-    margin-left: -4px;
 }
 .searchContainer button:hover{
     background: #fdfdfd;
